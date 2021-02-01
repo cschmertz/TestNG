@@ -2,6 +2,7 @@ package com.Vytrack.testscripts;
 
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
+import com.Vytrack.Utilities.Driver;
 import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
@@ -14,18 +15,19 @@ public class UserStory1AC4 extends TestBase {
     fleetPage fp = new fleetPage();
 
     @Test
-    public void testGridReset() throws InterruptedException {
+    public void testGridReset() {
 
-        String username = ConfigurationReader.getProperty("driver_username");
-        String password = ConfigurationReader.getProperty("driver_password");
+        String username = ConfigurationReader.getProperty("username1");
+        String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
         BrowserUtils.waitFor(3);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(3);
 
-        actions.moveToElement(fp.gridButton).click().perform();
-        Thread.sleep(2000);
+        Driver.getDriver().findElement(By.xpath("//*[@id=\"grid-custom-entity-grid-270689498\"]/div[2]/div[1]/div/div[3]/div[1]/div/div/a")).click();
+       // actions.moveToElement(fp.refreshButton).click().perform();
+        BrowserUtils.waitFor(3);
 
 
 
