@@ -24,7 +24,6 @@ public class UserStory1AC4 extends TestBase {
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
         BrowserUtils.waitFor(5);
 
-        Thread.sleep(2000);
         actions.moveToElement(fp.gridButton).click().perform();
         Thread.sleep(2000);
 
