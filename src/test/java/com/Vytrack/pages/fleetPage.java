@@ -20,13 +20,16 @@ public class fleetPage {
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[3]/a/span")
     public WebElement vehicleBtn;
 
+    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[5]/a/span")
+    public WebElement vehicleCostBtn;
+
     @FindBy(xpath = "//*[@id=\"grid-custom-entity-grid-2058013302\"]/div[2]/div[2]/div[2]/div/table")
     public WebElement tableVehicleInfo;
 
     @FindBy(xpath = "//*[@id=\"grid-custom-entity-grid-305451835\"]/div[2]/div[1]/div/div[3]/div[1]/div/a[3]/i")
     public WebElement refreshButton;
 
-    @FindBy(xpath = "//*[@id=\"grid-custom-entity-grid-807669614\"]/div[2]/div[1]/div/div[3]/div[1]/div/div")
+    @FindBy(xpath = "//*[@id=\"grid-custom-entity-grid-270689498\"]/div[2]/div[1]/div/div[3]/div[1]/div/div/a")
     public WebElement gridButton;
 
     @FindBy(xpath = "//*[@id=\"column-c209\"]")

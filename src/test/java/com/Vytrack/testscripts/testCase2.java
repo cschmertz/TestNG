@@ -8,27 +8,24 @@ import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class testCase1 extends TestBase{
+public class testCase2 extends TestBase {
 
     loginPage login = new loginPage();
     fleetPage fp = new fleetPage();
 
-
-
     @Test
-    public void testVehiclePageInfo()  {
+    public void vehicleCostPage(){
 
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
         BrowserUtils.waitFor(3);
-        actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
+        actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleCostBtn).click().perform();
         BrowserUtils.waitFor(5);
 
         WebElement table = Driver.getDriver().findElement(By.xpath("//table"));
@@ -45,18 +42,5 @@ public class testCase1 extends TestBase{
 
         System.out.println(BrowserUtils.getElementsText(rowData));
 
-        /*String expected = "SDETKahren Pro racer Rome, Italy 2020 Red";
-        String actual = rowData.get(2).getText();
-        Assert.assertEquals(actual,expected);
-
-         */
-
-
-
-
-
-
     }
-
-
 }
