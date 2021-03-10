@@ -45,11 +45,14 @@ public class testCase1 extends TestBase{
 
         System.out.println(BrowserUtils.getElementsText(rowData));
 
-        /*String expected = "SDETKahren Pro racer Rome, Italy 2020 Red";
+        /*String expected = ;
         String actual = rowData.get(2).getText();
         Assert.assertEquals(actual,expected);
 
          */
+
+       
+
 
 
 

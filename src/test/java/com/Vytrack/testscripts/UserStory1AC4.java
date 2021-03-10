@@ -7,6 +7,7 @@ import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserStory1AC4 extends TestBase {
@@ -25,9 +26,38 @@ public class UserStory1AC4 extends TestBase {
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
         BrowserUtils.waitFor(3);
 
-        Driver.getDriver().findElement(By.xpath("//*[@id=\"grid-custom-entity-grid-270689498\"]/div[2]/div[1]/div/div[3]/div[1]/div/div/a")).click();
-       // actions.moveToElement(fp.refreshButton).click().perform();
-        BrowserUtils.waitFor(3);
+
+        actions.moveToElement(fp.gridButton).click().perform();
+
+        BrowserUtils.waitFor(2);
+
+        actions.moveToElement(fp.idButton).click().perform();
+
+        BrowserUtils.waitFor(2);
+
+        Assert.assertTrue(fp.idCheckBox.isSelected(),"Id is selected");
+
+        BrowserUtils.waitFor(2);
+
+        actions.moveToElement(fp.closeButton).click().perform();
+
+        BrowserUtils.waitFor(2);
+
+        actions.moveToElement(fp.resetButton).click().perform();
+
+        BrowserUtils.waitFor(2);
+
+        actions.moveToElement(fp.gridButton).click().perform();
+
+        BrowserUtils.waitFor(2);
+
+        Assert.assertFalse(fp.idCheckBox.isSelected(),"Id is deselected");
+
+        BrowserUtils.waitFor(2);
+
+
+
+
 
 
 
