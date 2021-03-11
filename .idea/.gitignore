@@ -1,7 +1,8 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/configuration.properties
+/TestNG_Framework/
+/TestNG_Framework.configuration.properties
 /.idea/
 /target/
 # Datasource local storage ignored files
