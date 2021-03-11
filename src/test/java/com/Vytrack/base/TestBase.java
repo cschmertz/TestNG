@@ -1,5 +1,6 @@
 package com.Vytrack.base;
 
+import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
 import org.openqa.selenium.WebDriver;

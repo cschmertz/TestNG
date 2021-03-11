@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="52.017" tests="10" errors="0" skipped="4" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="33.016" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter2381949110445764208.jar /Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire 2021-03-09T17-41-27_540-jvmRun1 surefire7556334434469733569tmp surefire_02964435504932823316tmp"/>
+    <property name="sun.java.command" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter7561406882949098921.jar /Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire 2021-03-10T18-40-56_782-jvmRun1 surefire3546225541723899615tmp surefire_04751626810486318076tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/test-classes:/Users/riazahmed/IdeaProjects/TestNG_Framework/target/classes:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/riazahmed/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/riazahmed/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/riazahmed/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/riazahmed/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/riazahmed/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/riazahmed/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/riazahmed/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/riazahmed/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/riazahmed/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/riazahmed/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/riazahmed/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/riazahmed/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/riazahmed/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/riazahmed/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/riazahmed/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/riazahmed/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/riazahmed/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/riazahmed/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/riazahmed/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/riazahmed/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/riazahmed/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/riazahmed/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/riazahmed/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/riazahmed/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/riazahmed/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/riazahmed/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/riazahmed/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/riazahmed/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter2381949110445764208.jar"/>
+    <property name="surefire.real.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter7561406882949098921.jar"/>
     <property name="sun.boot.class.path" value="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/resources.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/sunrsasign.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jsse.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jce.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/charsets.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jfr.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -62,229 +62,62 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="test[http://etsy.com, Etsy](1)" classname="com.Vytrack.testscripts.testingTable" time="3.724">
+  <testcase name="testGridReset" classname="com.Vytrack.testscripts.UserStory1AC4" time="20.177">
+    <system-out><![CDATA[env = null
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 15786
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 41639
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Mar 09, 2021 5:41:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 10, 2021 6:40:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 10019
+[1615419660.006][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="test[http://etsy.com, Etsy](1)" classname="com.Vytrack.testscripts.testingTable" time="2.991">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 32168
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Mar 09, 2021 5:41:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 10, 2021 6:41:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1615329693.401][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329693.578][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329693.679][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329693.780][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329693.885][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329693.986][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329694.088][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419682.529][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419683.049][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419683.150][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
-  <testcase name="test[http://google.com, Google](2)" classname="com.Vytrack.testscripts.testingTable" time="2.813">
-    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 36621
+  <testcase name="test[http://google.com, Google](2)" classname="com.Vytrack.testscripts.testingTable" time="2.397">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 10301
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Mar 09, 2021 5:41:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 10, 2021 6:41:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1615329696.045][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.145][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.247][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.347][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.449][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.696][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.875][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329696.976][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329697.077][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.028][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.329][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.430][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.531][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.633][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419685.734][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
-  <testcase name="test[http://etsy.com, Etsy](3)" classname="com.Vytrack.testscripts.testingTable" time="10.301">
-    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 5579
+  <testcase name="test[http://etsy.com, Etsy](3)" classname="com.Vytrack.testscripts.testingTable" time="4.453">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 23253
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Mar 09, 2021 5:41:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 10, 2021 6:41:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1615329704.957][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.156][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.295][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.396][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.502][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.603][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.707][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.808][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329705.909][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.010][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.111][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.238][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.545][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.646][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.747][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329706.964][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329707.099][SEVERE]: Timed out receiving message from renderer: 0.100
-[1615329707.201][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419688.441][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419688.803][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419688.904][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.005][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.106][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.207][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.308][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.505][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.606][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.707][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615419689.872][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
-  </testcase>
-  <testcase name="vehicleCostPage" classname="com.Vytrack.testscripts.testCase2" time="31.153">
-    <system-out><![CDATA[env = null
-Depreciation and Interests
-$122,222.00
-Jun 23, 2020
-...
-Road Assistance
-$1,000.00
-
-...
-Depreciation and Interests
-$4,444.00
-
-...
-Depreciation and Interests
-$25.00
-Jun 3, 2020
-...
-Repair and maintenance
-
-Jun 27, 2020
-...
-
-
-
-...
-Summer tires
-$6,000.00
-Jun 11, 2020
-...
-Road Assistance
-$1,000.00
-Jun 28, 2020
-...
-Tax Roll
-$10.00
-Jun 13, 2020
-...
-Summer tires
-$1,000.00
-Jun 16, 2020
-...
-Tax Roll
-$25.00
-Jun 28, 2020
-...
-Road Assistance
-$90.00
-Jun 30, 2020
-...
-Road Assistance
-$500.00
-Jun 28, 2020
-...
-Depreciation and Interests
-$100.00
-
-...
-Road Assistance
-$90.00
-Jun 28, 2020
-...
-Repair and maintenance
-$100.00
-Jun 28, 2020
-...
-
-
-
-...
-Repair and maintenance
-$150.00
-Jun 29, 2020
-...
-
-
-
-...
-
-
-
-...
-Summer tires
-$500.00
-Jun 29, 2020
-...
-Road Assistance
-$1,000.00
-Jun 29, 2020
-...
-
-
-
-...
-
-
-
-...
-
-
-
-...
-[TYPE
-TOTAL PRICE
-DATE, , Depreciation and Interests $122,222.00 Jun 23, 2020
-..., Road Assistance $1,000.00
-..., Depreciation and Interests $4,444.00
-..., Depreciation and Interests $25.00 Jun 3, 2020
-..., Repair and maintenance Jun 27, 2020
-..., ..., Summer tires $6,000.00 Jun 11, 2020
-..., Road Assistance $1,000.00 Jun 28, 2020
-..., Tax Roll $10.00 Jun 13, 2020
-..., Summer tires $1,000.00 Jun 16, 2020
-..., Tax Roll $25.00 Jun 28, 2020
-..., Road Assistance $90.00 Jun 30, 2020
-..., Road Assistance $500.00 Jun 28, 2020
-..., Depreciation and Interests $100.00
-..., Road Assistance $90.00 Jun 28, 2020
-..., Repair and maintenance $100.00 Jun 28, 2020
-..., ..., Repair and maintenance $150.00 Jun 29, 2020
-..., ..., ..., Summer tires $500.00 Jun 29, 2020
-..., Road Assistance $1,000.00 Jun 29, 2020
-..., ..., ..., ...]
-]]></system-out>
-    <system-err><![CDATA[[1615329708.459][SEVERE]: Timed out receiving message from renderer: 0.100
-]]></system-err>
-  </testcase>
-  <testcase name="setUpMethod[null](0)" classname="com.Vytrack.testscripts.testCase1" time="31.349">
-    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
-Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: '2600:8806:202:6f00:e874:6c33:f71d:f16e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-]]></failure>
-    <system-out><![CDATA[env = null
-]]></system-out>
-  </testcase>
-  <testcase name="testVehiclePageInfo" classname="com.Vytrack.testscripts.testCase1" time="0">
-    <skipped message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
-  </testcase>
-  <testcase name="tearDownMethod" classname="com.Vytrack.testscripts.testCase1" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUpMethod[null](0)" classname="com.Vytrack.testscripts.UserStory1AC4" time="0.003">
-    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
-Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: '2600:8806:202:6f00:e874:6c33:f71d:f16e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-]]></failure>
-    <system-out><![CDATA[env = null
-]]></system-out>
-  </testcase>
-  <testcase name="testGridReset" classname="com.Vytrack.testscripts.UserStory1AC4" time="0">
-    <skipped message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
-  </testcase>
-  <testcase name="tearDownMethod" classname="com.Vytrack.testscripts.UserStory1AC4" time="0">
-    <skipped/>
   </testcase>
 </testsuite>

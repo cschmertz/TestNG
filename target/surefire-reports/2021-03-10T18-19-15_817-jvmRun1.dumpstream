@@ -1,0 +1,4 @@
+# Created at 2021-03-10T18:19:16.518
+
+Two tests in the same suite [smoke] cannot have the same name: vytrack
+

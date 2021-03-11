@@ -22,9 +22,9 @@ public class UserStory1AC4 extends TestBase {
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(2);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(2);
 
 
         actions.moveToElement(fp.gridButton).click().perform();

@@ -27,9 +27,9 @@ public class testCase1 extends TestBase{
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(2);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(2);
 
         WebElement table = Driver.getDriver().findElement(By.xpath("//table"));
 
@@ -43,13 +43,13 @@ public class testCase1 extends TestBase{
             }
         }
 
-        System.out.println(BrowserUtils.getElementsText(rowData));
+        Assert.assertFalse(rowData.isEmpty(),"List is Empty");
 
-        /*String expected = ;
-        String actual = rowData.get(2).getText();
-        Assert.assertEquals(actual,expected);
+        BrowserUtils.waitFor(2);
 
-         */
+
+
+
 
        
 

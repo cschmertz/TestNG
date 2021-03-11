@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-smoke">
-              <span class="suite-name border-skipped">smoke</span>
+              <span class="suite-name border-passed">smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-smoke">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,  2 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-smoke" class="hide-methods skipped suite-smoke"> (hide)</a> <!-- hide-methods skipped suite-smoke -->
-                      <a href="#" panel-name="suite-smoke" class="show-methods skipped suite-smoke"> (show)</a> <!-- show-methods skipped suite-smoke -->
-                    </span>
-                    <div class="method-list-content skipped suite-smoke">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-smoke" title="com.Vytrack.testscripts.UserStory1AC4" hash-for-method="testGridReset">testGridReset</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-smoke" title="com.Vytrack.testscripts.testCase1" hash-for-method="testVehiclePageInfo">testVehiclePageInfo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-smoke -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -136,7 +117,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-smoke" title="com.Vytrack.testscripts.testCase2" hash-for-method="vehicleCostPage">vehicleCostPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-smoke" title="com.Vytrack.testscripts.UserStory1AC4" hash-for-method="testGridReset">testGridReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-smoke -->
@@ -151,62 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-smoke" class="panel smoke">
-          <div class="suite-smoke-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.Vytrack.testscripts.testCase1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testVehiclePageInfo">
-                  </a> <!-- testVehiclePageInfo -->
-                  <span class="method-name">testVehiclePageInfo</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.Vytrack.base.TestBase.setUpMethod(TestBase.java:36)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-smoke-class-skipped -->
-          <div class="suite-smoke-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.Vytrack.testscripts.UserStory1AC4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGridReset">
-                  </a> <!-- testGridReset -->
-                  <span class="method-name">testGridReset</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;2600:8806:202:6f00:e874:6c33:f71d:f16e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.Vytrack.base.TestBase.setUpMethod(TestBase.java:36)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-smoke-class-skipped -->
           <div class="suite-smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -248,14 +173,14 @@ Driver info: driver.version: RemoteWebDriver
           <div class="suite-smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Vytrack.testscripts.testCase2</span>
+              <span class="class-name">com.Vytrack.testscripts.UserStory1AC4</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="vehicleCostPage">
-                  </a> <!-- vehicleCostPage -->
-                  <span class="method-name">vehicleCostPage</span>
+                  <a name="testGridReset">
+                  </a> <!-- testGridReset -->
+                  <span class="method-name">testGridReset</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,16 +196,15 @@ Driver info: driver.version: RemoteWebDriver
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;smoke&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;vytrack&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;com.Vytrack.testscripts&quot;/&gt;
-    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Vytrack.testscripts.testingTable&quot;/&gt;
-      &lt;class name=&quot;com.Vytrack.testscripts.testCase2&quot;/&gt;
-      &lt;class name=&quot;com.Vytrack.testscripts.testCase1&quot;/&gt;
       &lt;class name=&quot;com.Vytrack.testscripts.UserStory1AC4&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- vytrack --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;vytrack3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Vytrack.testscripts.testingTable&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- vytrack3 --&gt;
 &lt;/suite&gt; &lt;!-- smoke --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -292,7 +216,10 @@ Driver info: driver.version: RemoteWebDriver
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">vytrack (4 classes)</span>
+                <span class="test-name">vytrack (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">vytrack3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,36 +245,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'vehicleCostPage')
-data.setCell(0, 2, 'com.Vytrack.testscripts.testCase2')
-data.setCell(0, 3, 31149);
+data.setCell(0, 1, 'testGridReset')
+data.setCell(0, 2, 'com.Vytrack.testscripts.UserStory1AC4')
+data.setCell(0, 3, 20187);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test')
 data.setCell(1, 2, 'com.Vytrack.testscripts.testingTable')
-data.setCell(1, 3, 10306);
+data.setCell(1, 3, 4460);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test')
 data.setCell(2, 2, 'com.Vytrack.testscripts.testingTable')
-data.setCell(2, 3, 3720);
+data.setCell(2, 3, 2982);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test')
 data.setCell(3, 2, 'com.Vytrack.testscripts.testingTable')
-data.setCell(3, 3, 2825);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testVehiclePageInfo')
-data.setCell(4, 2, 'com.Vytrack.testscripts.testCase1')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testGridReset')
-data.setCell(5, 2, 'com.Vytrack.testscripts.UserStory1AC4')
-data.setCell(5, 3, 0);
+data.setCell(3, 3, 2399);
 window.suiteTableData['smoke']= { tableData: data, tableDiv: 'times-div-smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-smoke">
               </div> <!-- times-div-smoke -->
             </div> <!-- times-div -->
@@ -373,68 +292,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Vytrack.testscripts.testingTable</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test(http://etsy.com, Etsy)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test(http://google.com, Google)</span>
-                <span class="method-start">3722 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test(http://etsy.com, Etsy)</span>
-                <span class="method-start">6547 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.Vytrack.testscripts.testCase2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">16856 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">vehicleCostPage</span>
-                <span class="method-start">18064 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">49214 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.Vytrack.testscripts.testCase1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">49395 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testVehiclePageInfo</span>
-                <span class="method-start">49415 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">49415 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.Vytrack.testscripts.UserStory1AC4</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">49416 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGridReset</span>
-                <span class="method-start">49417 ms</span>
+                <span class="method-start">864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">49418 ms</span>
+                <span class="method-start">21053 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Vytrack.testscripts.testingTable</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test(http://etsy.com, Etsy)</span>
+                <span class="method-start">21236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(http://google.com, Google)</span>
+                <span class="method-start">24219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(http://etsy.com, Etsy)</span>
+                <span class="method-start">26618 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
