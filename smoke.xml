@@ -2,7 +2,7 @@
 <suite name="smoke">
     <test name="vytrack">
         <classes>
-            <class name="com.Vytrack.testscripts.smokeTest" ></class>
+            <class name="com.Vytrack.testscripts.testCase1" ></class>
         </classes>
     </test>
 </suite>

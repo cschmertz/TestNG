@@ -20,7 +20,6 @@ public abstract class TestBase {
 
 
 
-
     @BeforeMethod
     @Parameters("env")
     public void setUpMethod(@Optional String env){
@@ -33,6 +32,7 @@ public abstract class TestBase {
             url=ConfigurationReader.getProperty(env+"_url");
         }
         //if it is not null, choose env based on value
+
         driver = Driver.getDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
