@@ -3,6 +3,7 @@ package com.Vytrack.testscripts;
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
+import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -13,48 +14,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class smokeTest {
+public class smokeTest extends TestBase {
 
     loginPage login = new loginPage();
     fleetPage fp = new fleetPage();
 
-     WebDriver driver;
-     Actions actions;
-     WebDriverWait wait;
-     String url;
 
 
-
-    @BeforeTest(alwaysRun = true)
-    public void setUp(){
-
-        url = ConfigurationReader.getProperty("url");
-
-
-        driver = Driver.getDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        actions = new Actions(driver);
-        wait = new WebDriverWait(driver,10);
-
-        driver.get(url);
-    }
-
-    @AfterTest(alwaysRun = true)
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test(priority = 0)
     public void testVehiclePageInfo()  {
+
 
 
         String username = ConfigurationReader.getProperty("username1");
@@ -127,6 +102,7 @@ public class smokeTest {
 
     @Test(priority = 2)
     public void testGridReset() {
+
 
 
         String username = ConfigurationReader.getProperty("username1");

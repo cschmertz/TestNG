@@ -1,22 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 3, Errors: 0, Skipped: 6, Time elapsed: 10.223 s <<< FAILURE! - in TestSuite
-com.Vytrack.testscripts.testCase1.setUpMethod  Time elapsed: 1.686 s  <<< FAILURE!
-org.testng.TestNGException: 
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 46.251 s <<< FAILURE! - in TestSuite
+com.Vytrack.testscripts.testCase2.setUpMethod[null](0)  Time elapsed: 32.998 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: '2600:8806:202:6f00:2421:90f6:acec:5b7a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-
-com.Vytrack.testscripts.testCase2.setUpMethod  Time elapsed: 0.009 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-
-com.Vytrack.testscripts.UserStory1AC4.setUpMethod  Time elapsed: 0.004 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+com.Vytrack.testscripts.UserStory1AC4.setUpMethod[null](0)  Time elapsed: 0.015 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: '2600:8806:202:6f00:2421:90f6:acec:5b7a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
 
