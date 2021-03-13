@@ -5,4 +5,19 @@
             <class name="com.Vytrack.testscripts.testCase1" ></class>
         </classes>
     </test>
+    <test name="vytrack1">
+        <classes>
+            <class name="com.Vytrack.testscripts.testCase2" ></class>
+        </classes>
+    </test>
+    <test name="vytrack2">
+        <classes>
+            <class name="com.Vytrack.testscripts.UserStory1AC4" ></class>
+        </classes>
+    </test>
+    <test name="vytrack3">
+        <classes>
+            <class name="com.Vytrack.testscripts.testingTable" ></class>
+        </classes>
+    </test>
 </suite>

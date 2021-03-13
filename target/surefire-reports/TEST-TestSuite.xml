@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.223" tests="12" errors="0" skipped="6" failures="3">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="webdriver.chrome.driver" value="/Users/riazahmed/.m2/repository/webdriver/chromedriver/mac64/80.0.3987.106/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/test-classes:/Users/riazahmed/IdeaProjects/TestNG_Framework/target/classes:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/riazahmed/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/riazahmed/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/riazahmed/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/riazahmed/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/riazahmed/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/riazahmed/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/riazahmed/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/riazahmed/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/riazahmed/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/riazahmed/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/riazahmed/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/riazahmed/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/riazahmed/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/riazahmed/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/riazahmed/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/riazahmed/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/riazahmed/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/riazahmed/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/riazahmed/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/riazahmed/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/riazahmed/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/riazahmed/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/riazahmed/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/riazahmed/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/riazahmed/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/riazahmed/Library/Java/JavaVirtualMachines/openjdk-15.0.2-1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter15410949265582681137.jar /Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire 2021-03-12T23-24-22_945-jvmRun1 surefire13000883105840798860tmp surefire_010179994213944411510tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/test-classes:/Users/riazahmed/IdeaProjects/TestNG_Framework/target/classes:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/riazahmed/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/riazahmed/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/riazahmed/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/riazahmed/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/riazahmed/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/riazahmed/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/riazahmed/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/riazahmed/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/riazahmed/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/riazahmed/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/riazahmed/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/riazahmed/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/riazahmed/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/riazahmed/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/riazahmed/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/riazahmed/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/riazahmed/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/riazahmed/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/riazahmed/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/riazahmed/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/riazahmed/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/riazahmed/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/riazahmed/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/riazahmed/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/riazahmed/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/riazahmed/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/riazahmed/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/riazahmed/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/riazahmed/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/riazahmed"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="/Users/riazahmed/Library/Java/JavaVirtualMachines/openjdk-15.0.2-1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/riazahmed/IdeaProjects/TestNG_Framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/riazahmed/IdeaProjects/TestNG_Framework/target/surefire/surefirebooter15410949265582681137.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="riazahmed"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/riazahmed/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/tw/vls23gqn6gg01kbckjl214900000gn/T/"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="/Users/riazahmed/IdeaProjects/TestNG_Framework"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/riazahmed/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="setUpMethod" classname="com.Vytrack.testscripts.testCase1" time="1.686">
+    <failure message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 35514
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 12, 2021 11:24:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testVehiclePageInfo" classname="com.Vytrack.testscripts.testCase1" time="0">
+    <skipped message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection"/>
+  </testcase>
+  <testcase name="tearDownMethod" classname="com.Vytrack.testscripts.testCase1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUpMethod" classname="com.Vytrack.testscripts.testCase2" time="0.009">
+    <failure message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+]]></failure>
+  </testcase>
+  <testcase name="vehicleCostPage" classname="com.Vytrack.testscripts.testCase2" time="0">
+    <skipped message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection"/>
+  </testcase>
+  <testcase name="tearDownMethod" classname="com.Vytrack.testscripts.testCase2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUpMethod" classname="com.Vytrack.testscripts.UserStory1AC4" time="0.004">
+    <failure message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUpMethod.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+]]></failure>
+  </testcase>
+  <testcase name="testGridReset" classname="com.Vytrack.testscripts.UserStory1AC4" time="0">
+    <skipped message="&#10;Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUpMethod.&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection"/>
+  </testcase>
+  <testcase name="tearDownMethod" classname="com.Vytrack.testscripts.UserStory1AC4" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="test[http://etsy.com, Etsy](1)" classname="com.Vytrack.testscripts.testingTable" time="2.838">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 42778
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 12, 2021 11:24:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1615609467.216][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="test[http://google.com, Google](2)" classname="com.Vytrack.testscripts.testingTable" time="1.824">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 33347
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 12, 2021 11:24:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1615609469.496][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609469.597][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="test[http://etsy.com, Etsy](3)" classname="com.Vytrack.testscripts.testingTable" time="3.798">
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 17181
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 12, 2021 11:24:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1615609471.918][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609472.020][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609472.123][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609472.436][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609472.538][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609472.862][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609473.080][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609473.182][SEVERE]: Timed out receiving message from renderer: 0.100
+[1615609473.284][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+</testsuite>
