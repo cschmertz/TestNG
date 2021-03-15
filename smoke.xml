@@ -1,23 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="smoke">
-    <test name="vytrack">
+    <test name="vytrack" parallel="methods" thread-count="4">
         <classes>
-            <class name="com.Vytrack.testscripts.testCase1" ></class>
+            <class name="com.Vytrack.testscripts.smokeTest" ></class>
         </classes>
     </test>
-    <test name="vytrack1">
-        <classes>
-            <class name="com.Vytrack.testscripts.testCase2" ></class>
-        </classes>
-    </test>
-    <test name="vytrack2">
-        <classes>
-            <class name="com.Vytrack.testscripts.UserStory1AC4" ></class>
-        </classes>
-    </test>
-    <test name="vytrack3">
-        <classes>
-            <class name="com.Vytrack.testscripts.testingTable" ></class>
-        </classes>
-    </test>
+    
 </suite>

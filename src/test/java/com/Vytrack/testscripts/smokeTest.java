@@ -2,8 +2,7 @@ package com.Vytrack.testscripts;
 
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
-import com.Vytrack.Utilities.Driver;
-import com.Vytrack.base.TestBase;
+import com.Vytrack.Utilities.DriverSynchro;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -12,24 +11,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-public class smokeTest extends TestBase {
+public class smokeTest {
 
     loginPage login = new loginPage();
     fleetPage fp = new fleetPage();
 
+    String url = ConfigurationReader.getProperty("url");
+    Actions actions;
 
 
-
-    @Test(priority = 0)
+    @Test
     public void testVehiclePageInfo()  {
-
+        WebDriver driver = DriverSynchro.getDriverSynchro("chrome");
+        actions = new Actions(driver);
+        driver.get(url);
 
 
         String username = ConfigurationReader.getProperty("username1");
@@ -40,7 +40,7 @@ public class smokeTest extends TestBase {
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
         BrowserUtils.waitFor(2);
 
-        WebElement table = Driver.getDriver().findElement(By.xpath("//table"));
+        WebElement table = driver.findElement(By.xpath("//table"));
 
         List<WebElement> rowData = table.findElements(By.tagName("tr"));
 
@@ -56,6 +56,8 @@ public class smokeTest extends TestBase {
 
         BrowserUtils.waitFor(3);
 
+        driver.close();
+
 
 
 
@@ -70,8 +72,12 @@ public class smokeTest extends TestBase {
 
     }
 
-    @Test(priority = 1)
+    @Test
     public void vehicleCostPage(){
+
+        WebDriver driver = DriverSynchro.getDriverSynchro("firefox");
+        actions = new Actions(driver);
+        driver.get(url);
 
 
         String username = ConfigurationReader.getProperty("username1");
@@ -82,7 +88,7 @@ public class smokeTest extends TestBase {
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleCostBtn).click().perform();
         BrowserUtils.waitFor(2);
 
-        WebElement table = Driver.getDriver().findElement(By.xpath("//table"));
+        WebElement table = driver.findElement(By.xpath("//table"));
 
         List<WebElement> rowData = table.findElements(By.tagName("tr"));
 
@@ -98,10 +104,18 @@ public class smokeTest extends TestBase {
 
         BrowserUtils.waitFor(3);
 
+        driver.close();
+
+
+
     }
 
-    @Test(priority = 2)
+    @Test
     public void testGridReset() {
+
+        WebDriver driver = DriverSynchro.getDriverSynchro("chrome-headless");
+        actions = new Actions(driver);
+        driver.get(url);
 
 
 
@@ -142,6 +156,7 @@ public class smokeTest extends TestBase {
 
         BrowserUtils.waitFor(3);
 
+        driver.close();
 
 
 
@@ -150,7 +165,7 @@ public class smokeTest extends TestBase {
 
     }
 
-    @Test(priority = 3,description = "testingData", dataProvider = "testData")
+    @Test(description = "testingData", dataProvider = "testData")
     public void test(String url, String title){
 
 

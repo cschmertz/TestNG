@@ -1,15 +1,10 @@
 package com.Vytrack.pages;
 
-import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
-import com.Vytrack.base.TestBase;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import com.Vytrack.Utilities.DriverSynchro;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.List;
 
 public class fleetPage {
 

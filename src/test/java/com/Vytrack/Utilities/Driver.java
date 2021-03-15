@@ -1,6 +1,5 @@
 package com.Vytrack.Utilities;
 
-import com.Vytrack.base.TestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,7 +52,4 @@ public class Driver {
         }
     }
 
-
 }
-
-

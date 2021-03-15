@@ -1,6 +1,5 @@
 package com.Vytrack.testscripts;
 
-import com.Vytrack.Utilities.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

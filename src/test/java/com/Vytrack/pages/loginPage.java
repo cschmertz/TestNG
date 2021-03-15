@@ -2,6 +2,7 @@ package com.Vytrack.pages;
 
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
+import com.Vytrack.Utilities.DriverSynchro;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
