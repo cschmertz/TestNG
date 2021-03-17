@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="smoke">
-    <test name="vytrack" parallel="methods" thread-count="4">
-        <classes>
-            <class name="com.Vytrack.testscripts.smokeTest" ></class>
-        </classes>
-    </test>
-    
-</suite>
