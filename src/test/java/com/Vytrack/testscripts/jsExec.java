@@ -12,27 +12,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class jsExec {
+public class jsExec extends TestBase{
 
 
-    Actions action;
 
-
-    @Test
+    @Test()
     public void jsTest(){
 
-        String url = "https://www.nba.com/";
+       /* String url = "https://www.nba.com/";
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        new Actions(driver);
+        Actions action = new Actions(driver);
 
         driver.get(url);
+
+        */
+
+
 
         BrowserUtils.waitFor(3);
 
@@ -49,7 +54,7 @@ public class jsExec {
         js.executeScript("arguments[0].scrollIntoView(true);"+"arguments[0].click()",nba);
         BrowserUtils.waitFor(3);
 
-        driver.quit();
+        //driver.quit();
 
 
 

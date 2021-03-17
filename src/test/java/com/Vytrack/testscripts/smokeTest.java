@@ -3,6 +3,7 @@ package com.Vytrack.testscripts;
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.DriverSynchro;
+import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,6 +24,7 @@ public class smokeTest {
 
     String url = ConfigurationReader.getProperty("url");
     Actions actions;
+
 
 
     @Test
