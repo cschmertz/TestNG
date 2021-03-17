@@ -9,6 +9,9 @@ import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,13 +26,15 @@ public class testCase1 extends TestBase{
     @Test
     public void testVehiclePageInfo()  {
 
+
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
+        BrowserUtils.waitForClickablility(login.LoginButton,10);
         login.login(username,password);
 
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
-        BrowserUtils.waitFor(2);
+
 
         WebElement table = Driver.getDriver().findElement(By.xpath("//table"));
 
@@ -45,7 +50,7 @@ public class testCase1 extends TestBase{
 
         Assert.assertFalse(rowData.isEmpty(),"List is Empty");
 
-        BrowserUtils.waitFor(2);
+
 
 
 
