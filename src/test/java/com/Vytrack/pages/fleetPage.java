@@ -20,6 +20,9 @@ public class fleetPage {
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[3]/a/span")
     public WebElement vehicleBtn;
 
+    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[4]/a/span")
+    public WebElement vehicleOdometer;
+
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[5]/a/span")
     //@FindBy(css="span[class='title title-level-2']")
     public WebElement vehicleCostBtn;
@@ -47,6 +50,8 @@ public class fleetPage {
 
     @FindBy(css="input[id='column-c111']")
     public WebElement idCheckBox;
+
+
 
 
 
