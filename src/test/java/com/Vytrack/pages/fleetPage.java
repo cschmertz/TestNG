@@ -27,6 +27,10 @@ public class fleetPage {
     @FindBy(xpath = "//*[@id=\"grid-custom-entity-grid-2058013302\"]/div[2]/div[2]/div[2]/div/table")
     public WebElement tableVehicleInfo;
 
+    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[4]/a/span")
+    public WebElement vehicleOdometer;
+
+
     @FindBy(css="a[title='Reset']")
     public WebElement resetButton;
 
