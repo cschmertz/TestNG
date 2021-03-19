@@ -14,7 +14,7 @@ public class fleetPage {
 
     public fleetPage(){PageFactory.initElements(Driver.getDriver(),this); }
 
-    @FindBy(xpath = "//span[@class='title title-level-1']")
+    @FindBy(css= "span[class='title title-level-1']")
     public WebElement fleetTab;
 
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[3]/a/span")
