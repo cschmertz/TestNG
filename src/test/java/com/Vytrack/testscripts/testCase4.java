@@ -15,6 +15,7 @@ import java.util.List;
 
 public class testCase4 extends TestBase {
 
+
     loginPage login = new loginPage();
     fleetPage fp = new fleetPage();
 
@@ -25,9 +26,9 @@ public class testCase4 extends TestBase {
         BrowserUtils.waitForClickablility(login.LoginButton,10);
         login.login(username,password);
 
-        actions.moveToElement(fp.fleetTab).perform();
-        BrowserUtils.waitForVisibility(fp.vehicleOdometer,10);
-        actions.moveToElement(fp.vehicleOdometer).click().perform();
+
+        BrowserUtils.waitForVisibility(fp.fleetTab,10);
+        actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleOdometer).click().perform();
 
         WebElement vehicleOdometerTable = Driver.getDriver().findElement(By.xpath("//table"));
 
