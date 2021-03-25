@@ -23,20 +23,9 @@ public class jsExec extends TestBase{
 
 
 
+
     @Test()
     public void jsTest(){
-
-       /* String url = "https://www.nba.com/";
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Actions action = new Actions(driver);
-
-        driver.get(url);
-
-        */
-
 
 
         BrowserUtils.waitFor(3);
@@ -54,7 +43,7 @@ public class jsExec extends TestBase{
         js.executeScript("arguments[0].scrollIntoView(true);"+"arguments[0].click()",nba);
         BrowserUtils.waitFor(3);
 
-        //driver.quit();
+
 
 
 

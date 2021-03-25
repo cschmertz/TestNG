@@ -23,15 +23,13 @@ public abstract class TestBase {
     @BeforeMethod
     @Parameters("env")
     public void setUpMethod(@Optional String env){
-        System.out.println("env = " + env);
 
-        //if env variable is null use default url
-        if(env==null){
+
+        if(url==null){
             url=ConfigurationReader.getProperty("url");
         }else{
             url=ConfigurationReader.getProperty(env+"_url");
         }
-        //if it is not null, choose env based on value
 
         driver = Driver.getDriver();
         driver.manage().window().maximize();

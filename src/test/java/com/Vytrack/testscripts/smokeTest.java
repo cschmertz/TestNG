@@ -26,7 +26,6 @@ public class smokeTest {
     Actions actions;
 
 
-
     @Test
     public void testVehiclePageInfo()  {
         WebDriver driver = DriverSynchro.getDriverSynchro("chrome");

@@ -10,8 +10,6 @@ public class fleetPage {
 
 
 
-
-
     public fleetPage(){PageFactory.initElements(Driver.getDriver(),this); }
 
     @FindBy(css= "span[class='title title-level-1']")
