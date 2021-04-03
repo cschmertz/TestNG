@@ -2,43 +2,63 @@ package com.Vytrack.testscripts;
 
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
+import com.Vytrack.Utilities.Driver;
 import com.Vytrack.Utilities.DriverSynchro;
+import com.Vytrack.base.Environment;
 import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fleetPage;
 import com.Vytrack.pages.loginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class smokeTest {
 
     loginPage login = new loginPage();
     fleetPage fp = new fleetPage();
-
-    String url = ConfigurationReader.getProperty("url");
     Actions actions;
+    WebDriver driver;
 
+    @BeforeTest(alwaysRun = true)
+    public void testSetUp(){
 
-    @Test
+        driver = Driver.getDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.get("http://qa2.vytrack.com");
+    }
+
+    @AfterTest(alwaysRun = true)
+    public void testTearDown(){
+        driver.quit();
+    }
+
+    @Test(priority = 1)
     public void testVehiclePageInfo()  {
-        WebDriver driver = DriverSynchro.getDriverSynchro("chrome");
+
         actions = new Actions(driver);
-        driver.get(url);
-
-
+        driver.get("http://qa2.vytrack.com");
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
-        BrowserUtils.waitFor(2);
+
+        BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
+
         BrowserUtils.waitFor(2);
 
         WebElement table = driver.findElement(By.xpath("//table"));
@@ -57,35 +77,18 @@ public class smokeTest {
 
         BrowserUtils.waitFor(3);
 
-        driver.close();
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
-    @Test
+    @Test(priority = 0)
     public void vehicleCostPage(){
-
-        WebDriver driver = DriverSynchro.getDriverSynchro("firefox");
         actions = new Actions(driver);
-        driver.get(url);
-
-
+        driver.get(ConfigurationReader.getProperty("url"));
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleCostBtn).click().perform();
         BrowserUtils.waitFor(2);
 
@@ -105,26 +108,19 @@ public class smokeTest {
 
         BrowserUtils.waitFor(3);
 
-        driver.close();
-
-
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void testGridReset() {
-
-        WebDriver driver = DriverSynchro.getDriverSynchro("chrome-headless");
         actions = new Actions(driver);
-        driver.get(url);
-
-
-
+        BrowserUtils.waitFor(5);
+        driver.get(ConfigurationReader.getProperty("url"));
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
 
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
         BrowserUtils.waitFor(2);
 
@@ -157,41 +153,10 @@ public class smokeTest {
 
         BrowserUtils.waitFor(3);
 
-        driver.close();
-
-
-
-
-
-
-    }
-
-    @Test(description = "testingData", dataProvider = "testData")
-    public void test(String url, String title){
-
-
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get(url);
-
-        Assert.assertTrue(driver.getTitle().contains(title));
-
-        driver.quit();
-
-
-
-
 
     }
 
 
-    @DataProvider(name = "testData")
-    public Object [] [] testData(){
-        return new Object [] [] {{"http://etsy.com", "Etsy"},
-                {"http://google.com", "Google"},
-                {"http://etsy.com", "Etsy"}
-        };
-    }
 
 
 }

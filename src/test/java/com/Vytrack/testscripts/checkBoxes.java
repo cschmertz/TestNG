@@ -2,23 +2,33 @@ package com.Vytrack.testscripts;
 
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
+import com.Vytrack.Utilities.Driver;
 import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.checkBoxesPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.lang.annotation.Annotation;
 import java.util.List;
 
 public class checkBoxes extends TestBase {
 
     checkBoxesPage cb = new checkBoxesPage();
 
+
+
+
     @Test
     public void testCheckBoxes(){
 
-        driver.get(ConfigurationReader.getProperty("url4"));
+        url=ConfigurationReader.getProperty("url4");
+
+        driver.get(url);
 
         BrowserUtils.waitForClickablility(cb.checkBox,10);
 
@@ -56,6 +66,7 @@ public class checkBoxes extends TestBase {
 
 
     }
+
 
 
 }

@@ -2,16 +2,18 @@ package com.Vytrack.base;
 
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
-import com.Vytrack.Utilities.DriverSynchro;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+import java.lang.annotation.Annotation;
 import java.util.concurrent.TimeUnit;
 
 
-public abstract class TestBase {
+public class TestBase implements Environment{
 
     protected WebDriver driver;
     protected Actions actions;
@@ -21,15 +23,18 @@ public abstract class TestBase {
 
 
     @BeforeMethod
-    @Parameters("env")
-    public void setUpMethod(@Optional String env){
+    public void setUpMethod(ITestResult testResult){
+        String url = "url";
 
-
-        if(url==null){
-            url=ConfigurationReader.getProperty("url");
-        }else{
-            url=ConfigurationReader.getProperty(env+"_url");
+        Environment env = testResult.getMethod().getConstructorOrMethod().getMethod()
+                .getAnnotation(Environment.class);
+        if (env != null) {
+            url = env.url();
         }
+        System.err.println(testResult.getMethod().getQualifiedName() + "() will use the URL : " + url);
+
+
+
 
         driver = Driver.getDriver();
         driver.manage().window().maximize();
@@ -37,18 +42,27 @@ public abstract class TestBase {
         actions = new Actions(driver);
         wait = new WebDriverWait(driver,10);
 
-        driver.get(url);
+        driver.get(ConfigurationReader.getProperty(url));
 
     }
 
     @AfterMethod
-    public void tearDownMethod(){
+    public void tearDown(){
 
         driver.quit();
+    }
 
+
+    @Override
+    public String url() {
+        return null;
     }
 
 
 
+    @Override
+    public Class<? extends Annotation> annotationType() {
+        return null;
+    }
 }
 
