@@ -2,6 +2,7 @@ package com.Vytrack.testscripts;
 
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
+import com.Vytrack.base.Environment;
 import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.fileUploadPage;
 import org.openqa.selenium.WebElement;
@@ -16,9 +17,9 @@ public class FileUpload extends TestBase{
 
 
   @Test
+  @Environment(url = "url1")
   public void fileUploadTest(){
 
-      driver.get(ConfigurationReader.getProperty("url1"));
 
       BrowserUtils.waitForClickablility(fu.chooseFileButton,10);
       BrowserUtils.waitFor(5);
