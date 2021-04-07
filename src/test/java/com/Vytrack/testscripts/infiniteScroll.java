@@ -10,8 +10,14 @@ public class infiniteScroll extends TestBase {
     @Test
     @Environment(url = "url_9")
     public void testScroll(){
+        boolean x = true;
+
         BrowserUtils.waitFor(2);
-        BrowserUtils.executeJScommand("window.scrollBy(0,1000)");
+
+        while(x){
+            BrowserUtils.executeJScommand("window.scrollBy(0,22000)");
+        }
+
         BrowserUtils.waitFor(2);
     }
 }
