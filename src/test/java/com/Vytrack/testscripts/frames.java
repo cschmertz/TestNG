@@ -28,14 +28,15 @@ public class frames extends TestBase {
             Assert.assertTrue(fp.frameTop.isDisplayed());
             Assert.assertTrue(fp.bottomFrame.isDisplayed());
 
-            System.out.println(each.getAttribute("name"));
+            System.out.println("Attribute name of each frame is "+each.getAttribute("name"));
 
         }
-
+        System.out.println("Attribute name of Top frame is ");
         System.out.println(fp.frameTop.getAttribute("name"));
+        System.out.println("Attribute name of Top frame is ");
         System.out.println(fp.bottomFrame.getAttribute("name"));
 
-        System.out.println(frames.size());
+        System.out.println("Number of frames on the page that are visible "+frames.size());
 
         BrowserUtils.waitFor(2);
 
@@ -47,15 +48,18 @@ public class frames extends TestBase {
             Assert.assertTrue(fp.middleFrame.isDisplayed());
             Assert.assertTrue(fp.rightFrame.isDisplayed());
 
-            System.out.println(each.getAttribute("name"));
+            System.out.println("Attribute name of each frame is "+each.getAttribute("name"));
 
 
         }
+        System.out.println("Attribute name of left frame is ");
         System.out.println(fp.leftFrame.getAttribute("name"));
+        System.out.println("Attribute name of middle frame is ");
         System.out.println(fp.middleFrame.getAttribute("name"));
+        System.out.println("Attribute name of right frame is ");
         System.out.println(fp.rightFrame.getAttribute("name"));
 
-        System.out.println(nestedFrames.size());
+        System.out.println("Number of frames on the page that are nested "+nestedFrames.size());
 
 
     }
@@ -73,12 +77,15 @@ public class frames extends TestBase {
         BrowserUtils.waitFor(4);
 
         String actual = fp.inputText.getText();
-        Assert.assertEquals(actual,expected);
-
         System.out.println("Actual "+actual);
         System.out.println("Expected "+expected);
 
+        Assert.assertEquals(actual,expected);
         System.out.println(actual.equals(expected));
+
+
+
+
 
 
     }
