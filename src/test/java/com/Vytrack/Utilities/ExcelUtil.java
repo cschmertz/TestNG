@@ -2,10 +2,7 @@ package com.Vytrack.Utilities;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import org.apache.poi.ss.usermodel.*;
 import org.testng.Assert;
@@ -25,7 +22,7 @@ public class ExcelUtil {
             // Access the required test data sheet
             workBook = WorkbookFactory.create(ExcelFile);
             workSheet = workBook.getSheet(sheetName);
-            // check if sheet is null or not. null means  sheetname was wrong
+            // check if sheet is null or not. null means  sheet name was wrong
             Assert.assertNotNull(workSheet, "Sheet: \""+sheetName+"\" does not exist\n");
 
         } catch (Exception e) {
@@ -84,7 +81,7 @@ public class ExcelUtil {
             // get each row
             Row row = workSheet.getRow(i);
             // create map of the row using the column and value
-            // column map key, cell value --> map bvalue
+            // column map key, cell value --> map by value
             Map<String, String> rowMap = new HashMap<String, String>();
             for (Cell cell : row) {
                 int columnIndex = cell.getColumnIndex();
@@ -104,6 +101,19 @@ public class ExcelUtil {
             columns.add(cell.toString());
         }
         return columns;
+    }
+
+    public List<String> getAllData(){
+
+        List<String> tableData = new ArrayList<>();
+
+            for (int i = 1; i < rowCount(); i++) {
+                Row row = workSheet.getRow(i);
+                for (Cell cell : row) {
+                    tableData.add(cell.toString());
+                }
+            }
+        return tableData;
     }
 
     public void setCellData(String value, int rowNum, int colNum) {

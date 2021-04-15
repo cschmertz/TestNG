@@ -26,35 +26,20 @@ import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class smokeTest {
+public class smokeTest extends TestBase{
 
-    loginPage login = new loginPage();
-    fleetPage fp = new fleetPage();
-    Actions actions;
-    WebDriver driver;
 
-    @BeforeTest(alwaysRun = true)
-    public void testSetUp(){
+   loginPage login = new loginPage();
+   fleetPage fp = new fleetPage();
 
-        driver = Driver.getDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.get("http://qa2.vytrack.com");
-    }
 
-    @AfterTest(alwaysRun = true)
-    public void testTearDown(){
-        driver.quit();
-    }
-
-    @Test(priority = 1)
+    @Test(priority = 0)
+    @Environment(url = "url")
     public void testVehiclePageInfo()  {
 
-        actions = new Actions(driver);
-        driver.get("http://qa2.vytrack.com");
         String username = ConfigurationReader.getProperty("username1");
         String password = ConfigurationReader.getProperty("password");
         login.login(username,password);
-
 
         BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();
@@ -80,17 +65,15 @@ public class smokeTest {
 
     }
 
-    @Test(priority = 0)
+
+    @Test(priority = 1)
+    @Environment(url = "url")
     public void vehicleCostPage(){
-        actions = new Actions(driver);
-        driver.get(ConfigurationReader.getProperty("url"));
-        String username = ConfigurationReader.getProperty("username1");
-        String password = ConfigurationReader.getProperty("password");
-        login.login(username,password);
 
         BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleCostBtn).click().perform();
         BrowserUtils.waitFor(2);
+
 
         WebElement table = driver.findElement(By.xpath("//table"));
 
@@ -112,13 +95,10 @@ public class smokeTest {
     }
 
     @Test(priority = 2)
+    @Environment(url = "url")
     public void testGridReset() {
-        actions = new Actions(driver);
-        BrowserUtils.waitFor(5);
-        driver.get(ConfigurationReader.getProperty("url"));
-        String username = ConfigurationReader.getProperty("username1");
-        String password = ConfigurationReader.getProperty("password");
-        login.login(username,password);
+
+
 
         BrowserUtils.waitForVisibility(fp.fleetTab,10);
         actions.moveToElement(fp.fleetTab).pause(2).moveToElement(fp.vehicleBtn).click().perform();

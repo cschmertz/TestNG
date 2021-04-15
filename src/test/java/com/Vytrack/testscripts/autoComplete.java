@@ -3,6 +3,7 @@ package com.Vytrack.testscripts;
 import com.Vytrack.Utilities.BrowserUtils;
 import com.Vytrack.Utilities.ConfigurationReader;
 import com.Vytrack.Utilities.Driver;
+import com.Vytrack.base.Environment;
 import com.Vytrack.base.TestBase;
 import com.Vytrack.pages.autoCompletePage;
 import com.sun.corba.se.pept.transport.ByteBufferPool;
@@ -24,9 +25,8 @@ public class autoComplete extends TestBase {
 
 
     @Test
+    @Environment(url = "url2")
     public void testAutoComplete(){
-
-        driver.get(ConfigurationReader.getProperty("url2"));
 
 
         BrowserUtils.waitFor(3);
