@@ -53,7 +53,6 @@
     <groupId>org.openrdf.sesame</groupId>
     <artifactId>sesame-rio-api</artifactId>
     <version>4.1.2</version>
-    <scope> test </scope>
 </dependency>
 
 
